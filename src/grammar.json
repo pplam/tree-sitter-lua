@@ -2038,8 +2038,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_prefix_expression"
+          "type": "FIELD",
+          "name": "subject",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_prefix_expression"
+          }
         },
         {
           "type": "SYMBOL",
