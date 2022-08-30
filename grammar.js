@@ -285,7 +285,7 @@ module.exports = grammar({
         field("arguments", choice($.argument_list, $.table, $.string)),
       ),
     method_reference: $ => seq(
-      $._prefix_expression,
+      field("subject", $._prefix_expression),
       $._method_identifier,
     ),
     _method_identifier: ($) => seq(":", field("method", $.identifier)),
